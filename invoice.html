@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for form */
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form header */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Input field and label styling */
+        label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sales Form</h2>
+        <form action="invoice.php" method="GET">
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" name="name" class="name" placeholder="Enter costumer name" id="name" required> 
+            </div>
+            <div>
+                <label for="staff_id/Ghana_card">Staff ID / Ghana Card:</label>
+                <input type="text" name="staff_id" class="staff_id" placeholder="Enter your staff ID" id="staff_id" required>
+            </div>
+            <div>
+                <label for="number">Phone Number :</label>
+                <input type="number" name="number" class="number" placeholder="Enter costumer number" id="number" required>
+            </div>
+            <div>
+                <label for="station">Station / District:</label>
+                <input type="text" name="station" class="station" placeholder="Enter your station number/district" id="station" required>
+            </div>
+            <label for="station">Item name:</label>
+            <input type="text" name="item_name" class="item_name" placeholder="Enter your item_name" id="item_name" required>
+            <div>
+                <label for="station">Model:</label>
+                <input type="text" name="model" class="model" placeholder="Enter your model" id="model" required>
+            </div>
+            <div>
+                <label for="station">QUANTITY:</label>
+                <input type="number" name="quantity" class="quantity" placeholder="Enter your quantity" id="station" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

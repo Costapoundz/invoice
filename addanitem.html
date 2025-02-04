@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add New Item</h2>
+        <form action="add_item.php" method="POST">
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter item name" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+
+            <label for="model">Model:</label>
+            <input type="model" id="model" name="model" placeholder="Enter Model" required>
+
+            <label for="amount">Price</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter Price" required>
+            
+            <label for="category">Category:</label>
+    <select id="category" name="category">
+    <option value="Electronics">Electronics</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Food">Food</option>
+    <option value="Furniture">Furniture</option>
+    <option value="Books">Books</option>
+    <!-- Add more options as needed -->
+</select>
+
+
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+</body>
+</html>
