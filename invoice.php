@@ -107,6 +107,7 @@ $logStmt->execute([
     </style>
 </head>
 <body>
+    <a href ="index.html">home</a> 
 
 <div class="invoice-container">
     <div class="invoice-header">
